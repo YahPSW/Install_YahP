@@ -26,7 +26,7 @@ echo "instalando Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-apt-get -y install apt-transport-https
+apt-get install apt-transport-https
 apt-get update
 snap install --classic code
 snap install dbeaver-ce
@@ -41,10 +41,10 @@ code --install-extension ryannaddy.laravel-artisan
 code --install-extension vscode-icons-team.vscode-icons
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
-apt-get -y install apt-transport-https
+apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 apt-get update
 apt install gdebi-core wget
 wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 gdebi -y ~/discord.deb 
-apt-get -y install sublime-text
+apt-get install sublime-text
